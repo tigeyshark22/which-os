@@ -4,9 +4,10 @@
   </head>
   <body>
     <h1>And the underlying operating system is... </h1>
-    <br/>
+    <h2 style="color: red;">
 <?php
   echo shell_exec("grep ^NAME /etc/os-release | cut -d '\"' -f2");
 ?>
+    </h2>
   </body>
 </html>
